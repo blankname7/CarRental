@@ -520,7 +520,7 @@ header {
     cursor: pointer;
     font-size: 22px;
     padding: 3px 10px;
-    background-color: none;
+    background-color: transparent;
     border: 1px solid #3c4a3c;
     border-radius: 30px;
     align-self: center;
@@ -539,7 +539,7 @@ header {
     cursor: pointer;
     font-size: 22px;
     padding: 3px 10px;
-    background-color: none;
+    background-color: transparent;
     border: 1px solid #3c4a3c;
     border-radius: 30px;
     align-self: center;
