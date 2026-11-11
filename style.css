@@ -740,6 +740,7 @@ header {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .blog-card-description-text {
@@ -1190,4 +1191,251 @@ footer {
 .vantage-modal-img {
     width: 70%;
     min-width: 400px;
+}
+
+.hero-car-info-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-car-info-modal.show {
+    display: flex;
+}
+
+.hero-car-info-modal-box {
+    width: 70%;
+    height: auto;
+    background: white;
+    padding: 16px;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-car-info-modal-img {
+    width: 70%;
+    min-width: 400px;
+}
+
+.main-pic-modal {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.car-model-modal-tailboat {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-self: flex-start;
+    font-size: 30px;
+    margin: 5px 40px;
+}
+
+.tailboatleft-modal-img {
+    width: 550px;
+    height: auto;
+    border-radius: 20px; 
+}
+
+.small-pics-modal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.tailboat-modal-img {
+    width: 275px;
+    height: auto;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.26);
+}
+
+.characteristics-block-modal-tailboat {
+    width: 70%;
+    min-width: 350px;
+    background-color: transparent;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    outline: 2px solid #4f6786;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.26);
+}
+
+.tailboat-modal-img:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.tailboat-modal-img:hover {
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+    border: 1px solid #4f6786;
+}
+
+.book-now-button-modal-tailboat {
+    margin-top: 20px;
+    width: 100px;
+    background-color: #4f6786;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+.book-now-button-modal-tailboat:hover {
+    background-color: #617da0;
+}
+
+.book-now-button-modal-tailboat:active {
+    transition: all 0.1s ease;
+    transform: scale(0.97);
+}
+
+.blog-rr-modal-block-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-rr-modal-block-modal.show {
+    display: block;
+}
+
+.blog-rr-modal-box {
+    margin: 40px auto;
+    width: 70%;
+    height: auto;
+    background: white;
+    padding: 16px;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-model-modal-blog-rr-modal {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-self: flex-start;
+    font-size: 30px;
+    margin: 40px 0;
+    align-self: center;
+}
+
+.image-blog {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vantage-blog-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.vantage-blog-modal.show {
+    display: block;
+}
+
+.vantage-blog-modal-box {
+    margin: 40px auto;
+    width: 70%;
+    height: auto;
+    background: white;
+    padding: 16px;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-model-modal-blog-rr-image {
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.yacht-blog-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.yacht-blog-modal.show {
+    display: block;
+}
+
+.yacht-blog-modal-box {
+    margin: 40px auto;
+    width: 70%;
+    height: auto;
+    background: white;
+    padding: 16px;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body.modal-open {
+    overflow: hidden;
 }
