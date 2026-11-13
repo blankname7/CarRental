@@ -811,6 +811,20 @@ header {
     box-shadow: none;
 }
 
+.form-message {
+    font-size: 14px;
+    margin-top: 10px;
+    min-height: 20px;  
+}
+
+.form-message.error {
+    color: #d9534f;  
+}
+
+.form-message.success {
+    color: #5cb85c;  
+}
+
 footer {
     width: 100%;
     height: auto;
@@ -1358,18 +1372,6 @@ footer {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .vantage-blog-modal {
     display: none;
     position: fixed;
@@ -1434,6 +1436,43 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.calculator-modal {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-modal.show {
+    display: block;
+}
+
+.calculator-modal-box {
+    margin: 40px auto;
+    width: 70%;
+    height: auto;
+    background: white;
+    padding: 16px;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-claculator {
+    width: 50px;
+    height: 30px;
+    border-radius: 13px;
+    border: 1px solid #4a6455;
 }
 
 body.modal-open {

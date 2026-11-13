@@ -20,9 +20,25 @@ leftArrow.addEventListener('click', () => {
 
 const emailInput = document.getElementById('email-input');
 const submitButton = document.getElementById('submit-button');
+const formMessage = document.getElementById('form-message');
 
 function updateButtonState() {
-    submitButton.disabled = !emailInput.validity.valid
+    if (emailInput.value === "") {
+        submitButton.disabled = true;
+        formMessage.textContent = "";
+        formMessage.className = "form-message";
+        return;
+    }
+
+    if (emailInput.validity.valid) {
+        submitButton.disabled = false; 
+        formMessage.textContent = ""; 
+        formMessage.className = "form-message";
+    } else {
+        submitButton.disabled = true;
+        formMessage.textContent = "Введите корректный email";
+        formMessage.className = "form-message error"
+    }
 }
 
 emailInput.addEventListener('input', () => {
@@ -34,7 +50,8 @@ updateButtonState();
 submitButton.addEventListener('click', () => {
     emailInput.value = "";
     updateButtonState();
-});
+}); 
+
 
 const mclarenModal = document.getElementById('mclaren-modal');
 const openMclarenModal = document.getElementById('mclaren-block');
@@ -266,3 +283,4 @@ yachtModal.addEventListener('click', (event) => {
         document.body.classList.remove('modal-open');
     }
 });
+

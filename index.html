@@ -300,8 +300,9 @@
                     </p>
                 </div>
                 <div class="inp-block">
-                    <input type="text" class="inp-email" name="email" placeholder="example@gmail.com" required id="email-input">
+                    <input type="email" class="inp-email" name="email" placeholder="example@gmail.com" required id="email-input">
                     <button class="inp-button" id="submit-button">Submit</button>
+                    <p class="form-message" id="form-message"></p>
                 </div>
             </div>
         </section>
@@ -739,6 +740,16 @@
             </div>
         </div>
     </div> 
+    <div class="calculator-modal" id="calculator-modal">
+        <div class="calculator-modal-box">
+            <button class="modal-x" id="close-x-calculator">x</button>
+            <p class="car-model-modal-calculator">Book Rolls-Royce Tail Boat</p>
+            <p>$1600/ day</p>
+            <input class="input-claculator" type="number" name="number" id="days-input" placeholder="Days" min="1" value="1">
+            <p id="total-price"></p>
+            <button class="book-now-button-modal-tailboat">Book Now</button>
+        </div>
+    </div>    
     <script src="javascript.js"></script>
 </body>
 </html>
